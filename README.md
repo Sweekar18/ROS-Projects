@@ -1,29 +1,54 @@
+# ROS Projects
 
-# Ros Projects
-"ROS Projects" is a curated repository dedicated to housing a collection of projects centered around Robot Operating System (ROS). This repository serves as a resource hub for individuals seeking projects specifically related to ROS technologies.
+A curated collection of projects built around the **Robot Operating System (ROS)**. This repository serves as a resource hub for robotics enthusiasts exploring ROS and ROS2 technologies.
 
-# Installation
-- [Robot Operating System](http://wiki.ros.org/melodic/Installation/Ubuntu)
-- [Robot Operating System 2](https://docs.ros.org/en/foxy/Installation.html)
-# Projects
-## MazeBot
-"Mazebot" is an innovative project implemented in ROS2, showcasing a robot's ability to navigate and solve mazes utilizing computer vision. This project underscores the fusion of ROS2 capabilities with advanced computer vision techniques, enabling the robot to autonomously navigate and successfully navigate through maze environments.
+---
 
-### Project installation and testing 
-- Step 1: Copy the mazebot directory in the ROS2 workspace and perform colcon build
-- step 2: Run the mazebot_camera_maze.launch.py file 
+## Installation Requirements
 
-![](maze_bot/rosbot.jpg)
+- [Robot Operating System (ROS)](http://wiki.ros.org/ROS/Installation)
+- [Robot Operating System 2 (ROS2)](https://docs.ros.org/en/humble/Installation.html)
 
-## Ros Navigation Stack
-The ROS Navigation Stack project is a foundational implementation in ROS, offering a fundamental exploration into topics such as gmapping and SLAM. Designed for those embarking on their journey into ROS, this project provides essential insights into the navigation stack, serving as an excellent starting point for enthusiasts looking to delve into the intricacies of ROS navigation.
+---
 
-### Project installation and testing 
-- Step 1: Copy the ros navigation stack directory in the ROS workspace and perform catkin_make
-- step 2: Run the [navigation.launch](ros navigation stack/navigation/launch/navigation.launch) file
+## Projects
 
-## [Youtube](https://www.youtube.com/playlist?list=PLUnfeehiY56uImWc1iqEyvTOfCGaH3C71)
+### 1. MazeBot
+
+MazeBot is an innovative project implemented in **ROS2**, showcasing a robot's ability to navigate and solve mazes using computer vision. It highlights the fusion of ROS2 capabilities with advanced vision techniques, enabling the robot to autonomously navigate through maze environments.
+
+**Installation & Usage**
+
+1. Copy the `mazebot` directory into your ROS2 workspace and run:
+   ```bash
+   colcon build
+   ```
+2. Launch the project:
+   ```bash
+   ros2 launch mazebot mazebot_camera_maze.launch.py
+   ```
+
+---
+
+### 2. ROS Navigation Stack
+
+A foundational **ROS** implementation exploring core navigation concepts such as **gmapping** and **SLAM**. Designed as a starting point for those new to ROS navigation, this project provides essential insights into the ROS navigation stack.
+
+**Installation & Usage**
+
+1. Copy the `ros navigation stack` directory into your ROS workspace and run:
+   ```bash
+   catkin_make
+   ```
+2. Launch the navigation:
+   ```bash
+   roslaunch navigation navigation.launch
+   ```
+
+---
+
+## License
 
 
-
+This repository is for educational and learning purposes.
 
